@@ -1,0 +1,77 @@
+1. O que é Programação Orientada a Objetos (POO)?
+
+A Programação Orientada a Objetos (POO) é um paradigma de programação que organiza o software em objetos, que representam entidades do mundo real ou conceitos do sistema.
+Esses objetos reúnem dados (atributos) e comportamentos (métodos), permitindo modelar sistemas de forma mais próxima da realidade.
+
+2. Vantagens da POO em relação à Programação Estruturada
+
+A POO apresenta várias vantagens em comparação à programação estruturada:
+
+Melhor organização do código: divide o sistema em partes independentes (objetos).
+
+Maior reutilização: permite reaproveitar código por meio de herança.
+
+Facilidade de manutenção: alterações em uma parte do sistema afetam menos o todo.
+
+Maior escalabilidade: facilita o crescimento do software.
+
+Maior segurança: protege dados por meio do encapsulamento.
+
+Enquanto a programação estruturada é focada em funções e procedimentos, a POO é centrada em entidades que interagem entre si.
+
+3. Conceito de Objeto no Paradigma POO
+
+Um objeto é uma instância de uma classe que representa algo concreto no sistema.
+
+Ele é composto por:
+
+Atributos → características (dados)
+
+Métodos → ações (comportamentos)
+
+Exemplo:
+Um objeto Carro pode ter atributos como cor e velocidade, e métodos como acelerar() e frear().
+
+Em resumo, o objeto é a unidade fundamental da POO.
+
+4. Os 4 Principais Fundamentos da POO
+1. Encapsulamento
+
+Consiste em proteger os dados internos do objeto, permitindo acesso apenas por métodos controlados.
+
+Evita alterações indevidas.
+
+Aumenta a segurança do sistema.
+
+Exemplo: atributos privados acessados por métodos públicos.
+
+2. Abstração
+
+É o processo de representar apenas as características essenciais de um objeto, ignorando detalhes desnecessários.
+
+Foca no que é relevante.
+
+Simplifica o sistema.
+
+Exemplo: um objeto Conta Bancária não precisa mostrar como o banco processa internamente os dados.
+
+3. Herança
+
+Permite que uma classe herde características de outra.
+
+Promove reutilização de código.
+
+Evita repetição.
+
+Exemplo:
+Classe Veículo → Classe Carro herda suas propriedades.
+
+4. Polimorfismo
+
+Permite que objetos diferentes respondam de formas diferentes ao mesmo método.
+
+Aumenta a flexibilidade.
+
+Facilita extensões do sistema.
+
+Exemplo: o método calcularArea() pode funcionar diferente para Quadrado e Círculo.
