@@ -1,0 +1,39 @@
+<!-- tags de objeto servem para coletar dados de cliente. td q eu passo uma informação sao tags de objeto -->
+ <!-- essas tags podem ter dados ruins e falha de segurança se não estiver configurada corretamente -->
+  <!-- vamos fazer um formulario que simula formulario de doação de sangue -->
+<h3>Doação de Sangue</h3>
+<form>
+nome: <input type="text" id="txtNome"
+placeholder="digite seu nome completo" required><br>
+email: <input type="email" id="txtEmail" required><br>
+senha:<input type="password" id="txtSenha" required><br>
+idade:<input type="number" id="txtIdade" min="18" max="65" required><br>
+peso:<input type="number" id="txtPeso" min="50" max="150" step="0.1" required><br>
+data:<input type="date" id="data" required><br>
+hora: <input type="time" id="hora" required><br>
+tipo sanguineo:<br>
+<input type="radio" id="opAp" name="tipo">a+
+<input type="radio" id="opAn" name="tipo">a-
+<input type="radio" id="opBp" name="tipo">b+
+<input type="radio" id="opAn" name="tipo">b-
+<input type="radio" id="opABp" name="tipo">ab+
+<input type="radio" id="opABn" name="tipo">ab-
+<input type="radio" id="opOp" name="tipo">o+
+<input type="radio" id="opOn" name="tipo">o-
+Condições:<br>
+<input type="checkbox" id="op6meses">Doou sangue nos últimos 6 meses?<br>
+<input type="checkbox" id="opGravida">Esta gravida?<br>
+<input type="checkbox" id="opAlcool">Ingeriu alcool nas ultimas 12h?<br>
+<input type="checkbox" id="opTattoo">Fez tatuagem nos ultimos 3 meses?<br>
+Unidade:
+<select id="unidade">
+    <option>Ipiranga</option>
+    <option>Mooca</option>
+    <option>Vila Mariana</option>
+</select><br>
+mensagem:<textarea id="msg" rows="5" cols="30"></textarea><br>
+telefone:<input type="text" id="telefone"
+    pattern="\([0-9]{2,3}\)-[0-9]{4,5}-[0-9]{4}" required>
+<!-- aceita numeros de 0 a 9, no minimo 2 digitos, aceita numeros de 0 a 9, no minimo 4 digitos, no maximo 5 digitos, numeros de 0 a 9, 4 digitos -->
+<button>Enviar</button>
+</form>
