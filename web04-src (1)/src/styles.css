@@ -1,0 +1,72 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* ===== Seletor por TAG ===== */
+body {
+    background-color: silver;
+      background-image: radial-gradient(red, yellow, green);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+}
+h1 { 
+    font-family:'Courier New', Courier, monospace;
+    color: yellow;
+    font-weight: bold;
+    border-bottom: 1px yellow dotted;
+}
+input, select, textarea {
+    background-color: black;
+    color: white;
+    border: white 2px solid;
+    margin: 2px;
+    padding: 2px;
+}
+
+/* ===== Seletor por ID ===== */
+#txtEmail {
+    background-color: orange;
+}
+
+/* ===== Seletor por APELIDO (classe) ===== */
+.janela {
+    background-color:  gray;
+    width: 70%;
+    margin-left: 15%;
+    border: white 2px solid;
+    border-radius: 5px;
+    box-shadow: 0 12px 12px black;
+    padding:5px;
+}
+.botao {
+    width:20%;
+    background-color:blueviolet;
+    color:white;
+    padding: 10px;
+    border: white solid 2px;
+    border-radius: 5px;
+}
+.botao:hover {
+    border: yellow solid 4px;
+    color: yellow;
+    text-shadow: 1px 2px 2px black;
+}
+  .retrato {display: none;}
+    .paisagem {display: inline-table;}
+
+/* ===== Media Query ===== */
+@media screen and (orientation: portrait) {
+    .janela{
+        width: 100%;
+        margin-left: 0;
+    }
+    input,select,textarea{
+        width:95%;
+        padding:10px;
+        font-size: 12px;
+    }
+    .botao{
+        width: 95%;
+    }
+    .retrato {display: inline-table;}
+    .paisagem {display: none;}
+}

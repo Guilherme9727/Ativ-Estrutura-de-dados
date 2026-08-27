@@ -1,0 +1,44 @@
+<h3>Formulário Doação de Sangue</h3>
+<form class="janela">
+    nome:<input type="text" id="txtNome" placeholder="digite seu nome completo" 
+    required><br>
+    email:<input type="email" id="txtEmail" required><br>
+    senha:<input type="password" id="txtSenha" required><br>
+    idade:<input type="number" id="txtIdade" min="18" max="65"><br>
+    peso:<input type="number" id="txtPeso" min="50" max="130" step="0.1"><br>
+    data:<input type="date" id="txtData" required><br>
+    hora:<input type="time" id="txtHora"required><br> 
+    Tipo Sanguineo:
+    <div class="paisagem">
+    <input type="radio" id="opAp" name="tipoSanguineo">A+
+    <input type="radio" id="opAn" name="tipoSanguineo">A-
+    <input type="radio" id="opBp" name="tipoSanguineo">B+
+    <input type="radio" id="opBn" name="tipoSanguineo">B-
+    <input type="radio" id="opABp" name="tipoSanguineo">AB+
+    <input type="radio" id="opABn" name="tipoSanguineo">AB-
+    <input type="radio" id="opOp" name="tipoSanguineo">O+
+    <input type="radio" id="opOn" name="tipoSanguineo">O-
+    </div>
+    <div class="retrato">
+         <select id="tipoSanguineo">
+            <option>A+</option>            <option>A-</option>
+            <option>B+</option>            <option>B-</option>
+            <option>AB+</option>            <option>AB-</option>
+            <option>O+</option>            <option>O-</option>
+         </select>
+    </div>
+    <br>
+    Anamnese<br>
+    <input type="checkbox" id="opGravida">Esta gravida<br>
+    <input type="checkbox" id="opSeisMeses">Doou sangue nos ultimos 6 meses<br>
+    <input type="checkbox" id="opAlcool">Ingeriu alcool nas ultimas 12h<br>
+    <input type="checkbox" id="opTatoo">Fez tatuagem nos ultimos 3 meses<br><br>
+    Unidade:<select id="unidade">
+        <option>Ipiranga</option>
+        <option>Mooca</option>
+        <option>Vila Mariana</option>
+    </select><br>
+    mensagem:<textarea id="msg" rows="5" cols="50"></textarea><br>
+    telefone:<input type="text" id="txtTelefone" pattern="[0-9]{4,5}-[0-9]{4}"><br>
+    <button class="botao">Enviar</button>
+</form>

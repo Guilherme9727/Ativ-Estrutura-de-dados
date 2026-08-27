@@ -1,0 +1,74 @@
+/* ===== CSS geral da aplicação ===== */
+
+/* Seletor por TAG (elemento) */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Seletor por ID */
+#cabecalho-principal {
+  background-color: #b71c1c;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Seletor por APELIDO (classe) */
+.link-nav {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.2rem;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.link-nav:hover {
+  background-color: #fff;
+  color: #b71c1c;
+}
+
+/* Media Query - tablets */
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+
+  .link-nav {
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+  }
+}
+
+/* Media Query - celulares */
+@media (max-width: 480px) {
+  #cabecalho-principal {
+    padding: 0.6rem;
+  }
+
+  .link-nav {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.8rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
