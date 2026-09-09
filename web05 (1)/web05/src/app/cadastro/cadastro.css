@@ -1,0 +1,11 @@
+:host {
+  display: block;
+}
+
+.cadastro {
+  max-width: 760px;
+}
+
+.card {
+  background-color: var(--bs-tertiary-bg, #f8f9fa);
+}
